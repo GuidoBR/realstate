@@ -1,1 +1,1 @@
-web: gunicorn realstate.realstate.wsgi
+web: gunicorn realstate.wsgi
