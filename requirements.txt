@@ -1,4 +1,0 @@
-Django==2.0.7
-Pillow==5.1.0
-pytz==2018.3
-django-heroku==0.3.1
