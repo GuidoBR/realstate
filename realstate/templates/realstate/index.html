@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,11 +7,11 @@
         <title>Philigret Assessoria Imobiliária | Seu patrimônio confiado a quem entende</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/intro.css">
+        <link rel="stylesheet" href="{% static "css/intro.css" %}">
     </head>
     <body>
         <header>
-            <img src="images/logo.png" alt="Logotipo | Philigret Asseroria Imobiliária" title="Logotipo | Philigret Asseroria Imobiliária">
+            <img src="{% static "images/logotipo.png" %}" alt="Logotipo | Philigret Asseroria Imobiliária" title="Logotipo | Philigret Asseroria Imobiliária">
         </header>
 
         <nav>
