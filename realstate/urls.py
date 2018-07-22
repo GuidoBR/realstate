@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from . import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
-    path('', views.index, name="index"),
+    path('', TemplateView.as_view(template_name="realstate/index.html")),
     path('imovel/', include('imovel.urls')),
     path('admin/', admin.site.urls),
 ]
