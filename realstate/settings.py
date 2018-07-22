@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ["https://imobiliaria-crud.herokuapp.com/"]
 
 INSTALLED_APPS = [
     'imovel.apps.ImovelConfig',
+    'realstate.apps.RealstateConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
