@@ -1,25 +1,46 @@
+* {
+    margin: 0;
+}
 body {
     background-image: url("../images/fundo-intro.jpg");
 }
-
 header {
     text-align: center;
-    margin: 3% 0 0 0;
-    padding: 0 0 3% 0;
+    margin: 0;
+    padding: 3% 0 3% 0;
     border-bottom: 10px solid #bdd2a2;
+    background: url("../images/branco70.png");
 }
-
 nav {
     text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
-
 nav p {
     color: #ffffff;
     font-size: 1.4em;
     text-shadow: 1px 1px 1px #000;
     font-family: "Raleway";
 }
-
 nav ul {
     list-style: none;
+}
+nav ul li {
+    width: 225px;
+    background: #51453f;
+    box-shadow: 1px 1px 5px #000;
+    margin: 5px;
+    padding: 10px 0;
+    font-size: 0.9em;
+    text-align: center;
+    font-family: sans-serif;
+    display: inline-block;
+}
+nav ul li:hover {
+    background: #1b1a15;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
