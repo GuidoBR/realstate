@@ -19,6 +19,10 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name="realstate/index.html")),
+    path('venda-de-imoveis/', include('imovel.urls')),
+    path('aluguel-residencial/', include('imovel.urls')),
+    path('aluguel-comercial/', include('imovel.urls')),
+    path('aluguel-por-temporada/', include('imovel.urls')),
     path('imovel/', include('imovel.urls')),
     path('admin/', admin.site.urls),
 ]
