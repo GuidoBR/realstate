@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Venda de imóveis | Philigret Assessoria Imobiliária | Seu patrimônio confiado a quem entende</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="imovel.css">
+    </head>
+    <body>
+        <header>
+            <nav class="top-header guias">
+                <ul>
+                    <li><a href="#">Venda de imóveis</a></li>
+                    <li><a href="#">Aluguel residencial</a></li>
+                    <li><a href="#">Aluguel comercial</a></li>
+                    <li><a href="#">Aluguel por temporada</a></li>
+                </ul>
+            </nav>
+
+            <div class="guias-mobile">
+                <a href="#" class="link_tela"><img src="../imgs/home4.png"> Voltar ao Início</a>
+                <span class="link_tela">Estamos em: Venda de Imóveis</span>
+            </div>
+
+            <nav class="main-header">
+                <img class="img_logo" src="../imgs/logotipo_header.png" alt="Logotipo | Philigret Asseroria Imobiliária" title="Logotipo | Philigret Asseroria Imobiliária">
+                <ul class="menu">
+                    <li><a href="venda-de-imoveis/">Inicio</a></li>
+                    <li><a href="quem-somos/">A Imobiliária</a></li>
+                    <li><a href="venda-de-imoveis/#nossos_servicos">Serviços</a></li>
+                    <li><a href="venda-de-imoveis/#imoveis_destaque">Imóveis em Destaque</a></li>
+                    <li><a href="venda-de-imoveis/#contato">Contatos</a></li>    
+                </ul>
+            </nav>
+        </header>
+
+        <div class="carrousel flexslider">
+            <ul>
+                <li><div class="img_banner" id="slide-1"></div></li>
+                <li><div class="img_banner" id="slide-2"></div></li>
+            </ul>
+            <ol class="flex-control-nav">
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a class="prev" href="#">Anterior</a></li>
+                <li><a class="next" href="#">Próximo</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <!-- Busca -->
+        </div>
+
+        <div>
+            {% block imoveis %} {% endblock %}
+        </div>
+
+        <div>
+            <!-- Nossos serviços -->
+            <h3>Nossos serviços</h3>
+            <div>
+                <h4>Locação e venda de imóveis</h4>
+                <p>Para a locação e venda de seu imóvel, prestamos serviços de qualidade, através de:</p>
+                <ul>
+                    <li>Divulgação com anúncios em nosso site, mídias grátis e as contratadas, placas de divulgação.</li>
+                    <li>Levantamento cadastral dos pretendentes ao imóvel.</li>
+                    <li>Elaboração de contratos por nosso departamento juridico.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Administração de imóveis</h4>
+                <p>Realizamos serviços de excelência na administração de seu imóvel:</p>
+                <ul>
+                    <li>Divulgação de seu imóvel nos meios de comunicação.</li>
+                    <li>Intermediação entre locador e locatário.</li>
+                    <li>Cobrança dos aluguéis e encargos de locação.</li>
+                    <li>Demonstrativo mensal dos valores recebidos e pagos.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Assessoria jurídica</h4>
+                <p>Prestação permanente de serviços de advocacia por nosso departamento jurídico, com seriedade e honestidade</p>
+                <ul>
+                    <li>Com especialidade em Direito Imobiliária</li>
+                    <li>Legalização de Imóveis</li>
+                    <li>Direito sucessório</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Legalização de imóveis</h4>
+                <p>Realização de um serviço completo, com a orientação e conclusão da legalização de seu imóvel,
+                    em todas as etapas exigidas pelo poder público para a sua segurança e tranquilidade.</p>
+            </div>
+        </div>
+
+        <div>
+            <!-- Fale conosco -->
+            <form action="#" method="post" name="form_contato">
+                    <input class="input4" name="nome" type="text" placeholder="ENTRE COM SEU NOME" value="">
+                    <input class="input4" name="email" type="email" placeholder="INSIRA SEU EMAIL" value="">
+                    <input class="input4" name="tel" type="tel" placeholder="ENTRE COM SEU TELEFONE" value="">
+                    <textarea class="input4 box-msg" name="mensagem" placeholder="INSIRA SUA MENSAGEM"></textarea>
+                    
+                    <div>
+                        <input type="hidden" name="acao" value="contato">
+                        <input type="submit" class="bt2 texto" value="ENVIAR"> 
+                    </div>            
+            </form>
+        </div>
+
+        <footer>
+            <div>
+                <!-- Links -->
+                <a href="https://www.facebook.com/PhiligretImobiliaria/" target="_blank"><img src="{% static "images/r_face.png" %}"></a>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">A imobiliária</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Imóveis em destaque</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <!-- Informações -->
+                <div>
+                    <p>Rua Gessyr Gonçalves Fontes, 180/102 - Centro - São João de Meriti - RJ</p>
+                </div>
+
+                <div>
+                    <p>contato@philigretimobiliaria.com.br</p>
+                </div>
+
+                <div>
+                    <p>(21) 2655-1966 | (21) 3753-6317<br>
+                        (21) 99707-2260 - WhatsApp</p>
+                </div>
+            </div>
+
+            <div>
+                <!-- Copyright-->
+                <p>Copyright © 2016 - Philigret Assessoria Imobiliária - Todos os direitos reservados - CNPJ: 11.491.754/0001-08 | CRECI-RJ: J 6626/0</p>
+            </div>
+        </footer>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
