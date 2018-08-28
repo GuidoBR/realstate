@@ -93,6 +93,39 @@ TOP MENU
     width: 38px;
 }
 /*********
+BODY
+**********/
+#services {
+    background: #bdd2a2 url(../images/simbolo_logo.png) left no-repeat;
+    color: #eee;
+    text-align: left;
+    font-size: 1em;
+}
+#services .services-description {
+    width: 20%;
+    line-height: 1.7em;
+}
+#services img {
+    border: 3px solid #aac38a;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 180px;
+}
+#services #services-names {
+    display: flex;
+    justify-content: center;
+}
+#services h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+}
+#services h4 {
+    font-size: 1.5em;
+    color: #e3f3cf;
+}
+/*********
 FOOTER
 **********/
 #footer-information, #footer-copyright, #footer-links {
