@@ -91,5 +91,45 @@ TOP MENU
     color: #103144;
     height: 20px;
     width: 38px;
-
+}
+/*********
+FOOTER
+**********/
+#footer-information, #footer-copyright, #footer-links {
+    padding: 20px 0;
+}
+footer {
+    text-align: center;
+    color: #fff;
+}
+footer #footer-links {
+    background: #5a8dae;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.15em;
+}
+footer #footer-links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+footer #footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+footer #footer-information {
+    background: #4a7d9e;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+}
+footer #footer-information div {
+    padding: 0 20px;
+}
+footer #footer-information img {
+    margin: 10px 0;
+}
+footer #footer-copyright {
+    background: #396581;
+    padding: 20px 0;
+    font-size: 0.8em;
 }
