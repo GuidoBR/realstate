@@ -1,0 +1,115 @@
+.r_social{
+	position:relative;
+	width:100px;
+	height:auto;
+	text-align:left;
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+}
+@media (max-width: 1024px){
+	.r_social{
+		text-align:center;
+	}
+}
+
+
+.guias2{
+	position:relative;
+	width:800px;
+	text-align:right;
+	display:inline-block;
+	vertical-align:middle;
+}
+@media (max-width: 1024px){
+	.guias2{
+		display:none;
+	}
+}
+
+.texto_guias2{
+	font-family:Raleway;
+	font-size:1.6em;
+	color:#fff;	
+}
+
+.menu_rodape li{
+	position:relative;
+    width:auto;
+    height:auto;
+	display:inline-block;
+    text-align:center;
+    margin:0px 15px;
+}
+.menu_rodape li a:link{
+	color:#fff;  
+}
+.menu_rodape li a:visited{
+	color:#fff;  
+}
+.menu_rodape li a:hover{
+	color: #85afc9;   
+}
+
+.box_contatos{
+	position:relative;
+	width:320px;
+	height:100px;
+	display:inline-block;
+	vertical-align:top;
+    text-align:center;
+    padding:0px 10px;
+    margin-left:-3px;
+}
+@media (max-width: 1024px){
+	.box_contatos{
+		width:90%;
+		margin:10px 0px;
+	}
+}
+
+.texto_cont{
+	font-family:Open Sans;
+	color:#cedde6;
+	font-size:1.4em;
+	line-height:1.4em;
+	font-weight:normal;
+}
+
+.direitos{
+	position:relative;
+	width:540px;
+	height:auto;
+	text-align:left;
+	display:inline-block;
+	vertical-align:middle;
+}
+@media (max-width: 1024px){
+	.direitos{
+		width:90%;
+		display:block;
+		text-align:center;
+		margin:0 auto;
+		margin-bottom:30px;
+	}
+}
+
+
+.assinatura{
+	position:relative;
+	width:420px;
+	height:auto;
+	text-align:right;
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:-3px;
+}
+@media (max-width: 1024px){
+	.assinatura{
+		width:90%;
+
+		display:block;
+		text-align:center;
+		margin:0 auto;
+	}
+}

@@ -1,0 +1,100 @@
+body{
+	margin: 0 auto;
+	overflow-x: hidden;
+	font-size:62.5%;/* facilita a conta para passagem de px para em ... Exemplo 10px = 1.0 em*/
+}
+
+img{
+	border: none;
+	max-width: 100%;/* garante que a imagem não ultrapassará seu tamanho máximo */
+	vertical-align:middle;
+}
+
+a{
+	text-decoration: none;
+}
+
+div{
+	-webkit-box-sizing: border-box;/* Adiciona padding ao tamanho final da div*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1{
+	font-family:Raleway;
+	font-size:3.2em;
+	color:#4c7d9d;
+	text-align:center;
+	font-weight:normal;
+	margin-top:0px;
+	margin-bottom:60px;
+}
+@media (max-width: 1024px){
+	h1{
+		font-size:2.5em;
+	}
+}
+
+h2{
+	font-family:Raleway;
+	font-size:2.5em;
+	color:#4c7d9d;
+	text-align:left;
+	font-weight:normal;
+	margin:20px 0px;
+}
+@media (max-width: 1024px){
+	h2{
+		font-size:2.0em;
+		text-align:center;
+		margin:0px 0px 20px 0px;
+	}
+}
+
+header{
+	margin-top:40px;
+}
+
+input{
+	padding:0;
+	margin:0;
+}
+
+textarea{
+	padding:0;
+	margin:0;
+}
+
+.palco{
+	position:relative;
+	width:960px;
+	height:auto;
+	margin:0 auto;
+}
+@media (max-width: 1024px){
+	.palco{
+		width:90%;
+		margin-left:5%;
+		text-align:center;
+	}
+}
+
+.texto{
+	font-family:Open Sans;
+	font-size:1.6em;
+	font-weight:normal;
+	color:#103144;
+}
+
+.texto2{
+	font-family:Oswald;
+	font-size:1.7em;
+	color:#fff;
+}
+
+.texto3{
+	font-family:Oswald;
+	font-size:1.8em;
+	font-weight:normal;
+	color:#103144;
+}

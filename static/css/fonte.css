@@ -1,0 +1,8 @@
+/* Raleway */
+@font-face {
+    font-family: 'Raleway';
+	src: url('../fontes/Raleway/Raleway.eot');/* EOT file for IE */
+	src: url('../fontes/Raleway/Raleway.woff') format('woff'), url('../fontes/Raleway/Raleway.ttf') format('truetype'), url('../fontes/Raleway/Raleway.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

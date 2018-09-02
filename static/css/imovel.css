@@ -1,0 +1,147 @@
+#top_banner{
+	position:relative;
+	width:100%;
+	height:370px;
+	background-size:cover;
+}
+
+
+
+#desc_imovel{
+	position:relative;
+	width:100%;
+	height:auto;
+	z-index:80;
+	padding:20px 0px;
+}
+
+.img_imovel{
+	position:relative;
+	width:640px;
+	height:450px;
+	background:#ccc;
+	border:8px solid #eee;
+	display:inline-block;
+	vertical-align:top;
+}
+@media (max-width: 1024px){
+	.img_imovel{
+		width:100%;
+		margin:0 auto;
+		display:block;
+	}
+}
+
+.box_form_imovel{
+	position:relative;
+	width:300px;
+	height:450px;
+	background:#eee;
+	margin-left:17px; /* retirarei -3px */
+	padding:10px;
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+}
+@media (max-width: 1024px){
+	.box_form_imovel{
+		width:100%;
+		margin:0 auto;
+		display:block;
+		margin-left:0px;
+		margin-top:40px;
+	}
+}
+
+.box_foto{
+	position:relative;
+	width:100%;
+	height:434px;
+}
+
+.input3{
+	position:relative;
+	width:95%;
+	height:30px;
+	background:#fff;
+	border:#ddd solid 1px;
+	border-radius:5px;
+	text-indent:5px;
+	margin:5px 0px;
+	margin-left:2.5%;
+	display:block;
+}
+
+.textarea1{
+	position:relative;
+	width:95%;
+	height:120px;
+	background:#fff;
+	border:#ddd solid 1px;
+	border-radius:5px;
+	text-indent:5px;
+	margin:5px 0px;
+	margin-left:2.5%;
+	display:block;
+}
+
+/* PLACEHODER */
+::-webkit-input-placeholder {
+    font-family: Raleway;
+    font-size: 1.0em;
+    color:#ccc;
+}
+
+:-moz-placeholder {
+    font-family: Raleway;
+    font-size: 1.0em;
+    color:#ccc;
+}
+
+::-moz-placeholder {
+    font-family: Raleway;
+    font-size: 1.0em;
+    color:#ccc;
+}
+
+:-ms-input-placeholder {  
+   font-family: Raleway;
+    font-size: 1.0em;
+    color:#ccc;
+}
+/* Fim - Placehoder */
+
+.bt2{
+	position:relative;
+	width:95%;
+	height:35px;
+	padding:5px 0px;
+	text-align:center;
+	margin-left:2.5%;
+	background:#103146;
+	border:none;
+	border-radius:5px;
+	cursor:pointer;
+	display:block;
+}
+
+.bloco_3{
+	position:relative;
+	width:320px;
+	height:auto;
+	padding:5px;
+	display:inline-block;
+	vertical-align:top;
+	margin:20px 0px ;
+	margin-left:-3px;
+	text-align:left;
+}
+@media (max-width: 1024px){
+	.bloco_3{
+		width:100%;
+		display:block;
+		margin:0;
+		margin-bottom:10px;
+	}
+}
+

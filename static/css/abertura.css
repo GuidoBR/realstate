@@ -1,0 +1,107 @@
+
+#abertura{
+	position:fixed;
+	width:100%;
+	height:1000px;
+	background:#fff url(../imgs/apartamento-vidal-8.jpg) center;
+	background-size:cover;
+	overflow:hidden;
+	top:0;
+	z-index:1000;
+}
+
+.base_logo{
+	position:relative;
+	width:100%;
+	height:auto;
+	text-align:center;
+	padding:60px 0px;
+	background:url(../imgs/branco70.png);	
+	z-index:0;
+}
+@media (max-width: 1024px){
+	.base_logo{
+		padding:30px 0px;
+	}
+}
+
+
+.logotipo{
+	position:relative;
+	width:680px;
+}
+@media (max-width: 1024px){
+	.logotipo{
+		width:90%;
+	}
+}
+
+.bar_inf{
+	position:absolute;
+	width:100%;
+	height:10px;
+	bottom:-10px;
+	background:#bdd2a2;
+}
+
+.bg_base{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	background:url(../imgs/raster.png);
+	z-index:-10;
+}
+
+.desc_selecao{
+	position:absolute;
+	width:100%;
+	height:160px;
+	text-align:center;
+	bottom:0px;
+}
+@media (max-width: 1024px){
+	.desc_selecao{
+		position:relative;
+		width:90%;
+		margin:0 auto;
+		margin-top:50px;
+	}
+}
+
+.titulo1{
+	font-family:'Raleway';
+	font-size:2.4em;
+	color:#fff;
+	text-shadow:1px 1px 1px #000;
+}
+@media (max-width: 1024px){
+	.titulo1{
+		font-size:2.1em;
+	}
+}
+
+.bt_selecao{
+	position:relative;
+	width:225px;
+	height:auto;
+	display:inline-block;
+	vertical-align:middle;
+	margin:5px;
+	padding:10px 0px;
+	background:#51453f;
+	border-radius:5px;
+	box-shadow:1px 1px 5px #000;
+	cursor:pointer;	
+}
+@media (max-width: 1024px){
+	.bt_selecao{
+		display:block;
+		margin:0 auto;
+		margin-top:10px;
+	}
+}
+.bt_selecao:hover{
+	background:#1b1a15;
+}
+

@@ -1,0 +1,98 @@
+#nossos_servicos{
+	position:relative;
+	width:100%;
+	height:auto;
+	min-height:500px;
+	padding:60px 0px;
+	margin:0;
+	text-align:center;
+	background:#bdd2a2 url(../imgs/simbolo_logo.png) left no-repeat;
+	background-size:100%;
+	z-index:60;
+}
+
+.box_servicos{
+	position:relative;
+	width:270px;
+	height:auto;
+	display:inline-block;
+	vertical-align:top;
+	margin:0px 15px 40px 15px;
+}
+@media ( max-width: 1024px){
+	.box_servicos{
+		width:90%;
+		margin:0 auto;
+		margin-left:5%;
+		margin-bottom:40px;
+	}
+}
+
+.img_servicos{
+	position:relative;
+	width:180px;
+	border:3px solid #aac38a;
+	border-radius:50%;
+	margin:0 auto;
+}
+@media ( max-width: 1024px){
+	.img_servicos{
+		width:65%;
+	}
+}	
+
+
+.titulo_serv{
+	font-family:Oswald;
+	font-size:2.0em;
+	color:#e3f3cf;
+	font-weight:normal;
+	text-align:center;
+	margin-top:15px;
+}
+
+.desc_serv{
+	width:100%;
+	min-height:150px;
+	height:auto;
+	text-align:left;
+	font-family:Raleway;
+	font-size:1.5em;
+	color:#eee;	
+	line-height:1.5em;
+	margin:15px 0px;
+	overflow:hidden;
+}
+@media (max-width: 1024px){
+	.desc_serv{
+		width:90%;
+		margin-left:5%;
+		text-align:left;
+	}
+}
+
+.bt_serv{
+	position:relative;
+	width:350px;
+	height:auto;
+	border:1px solid #eee;
+	color:#eee;
+	padding:5px;
+	font-family:Oswald;
+	font-size:1.6em;
+	font-weight:500;	
+	cursor:pointer;
+	margin:0 auto;
+}
+.bt_serv:hover{
+	border:1px solid #d4e6be;
+	color:#d4e6be;	
+	cursor:pointer;
+}
+
+@media (max-width: 1024px){
+	.bt_serv{
+		width:90%;
+		margin-left:5%;
+	}
+}

@@ -1,0 +1,19 @@
+@import url(abertura.css);
+
+@import url(header.css);/* Contém o CSS do topo da página*/
+
+@import url(banner.css);
+
+@import url(filtro.css);
+
+@import url(corpo.css);/* Contém o CSS do corpo da página com as listagens de imóveis*/
+
+@import url(servico.css);
+
+@import url(imovel.css);
+
+@import url(footer.css);
+
+@import url(padrao.css);/* Contém o CSS padrão a todo site */
+
+@import url(fonte.css);

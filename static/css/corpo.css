@@ -1,0 +1,156 @@
+#imoveis_selecionados{
+	position:relative;
+	width:100%;
+	height:auto;
+	text-align:center;	
+	padding:80px 0px;
+	margin:0;
+	background: url(../imgs/subtle_dots.png);
+	z-index:80;
+	display:none;
+}
+@media (max-width: 1024px){
+	#imoveis_selecionados{
+		padding:80px 10px;
+		-webkit-box-sizing: border-box;/* Adiciona padding ao tamanho final da div*/
+    	-moz-box-sizing: border-box;
+    	box-sizing: border-box;
+	}
+}
+
+#imoveis_destaque{
+	position:relative;
+	width:100%;
+	height:auto;
+	text-align:center;	
+	padding:80px 0px;
+	margin:0;
+	background: url(../imgs/pat_bg.jpg);
+	z-index:70;
+}
+@media (max-width: 1024px){
+	#imoveis_destaque{
+		padding:80px 10px;
+		-webkit-box-sizing: border-box;/* Adiciona padding ao tamanho final da div*/
+    	-moz-box-sizing: border-box;
+    	box-sizing: border-box;
+	}
+}
+
+
+.box_imovel{
+	position:relative;
+	width:260px;
+	height:auto;
+	display:inline-block;
+	border:1px solid #eee;
+	vertical-align:top;
+}
+.box_imovel:hover{	
+	border-top:5px solid #bdd2a2;
+}
+
+.content-box_imovel{
+	position:relative;
+	width:260px;
+	height:360px;
+	display:inline-block;
+	vertical-align:top;
+	margin: 0px 10px 40px 10px;
+}
+
+
+
+
+
+.local_box{
+	width:100%;
+	height:auto;
+	padding:7px;
+	text-align:center;
+	background:#fff;
+}
+
+.img_box{
+	position:relative;
+	width:100%;
+	height:170px;
+	background-position:center; 
+	background-size:cover;
+}
+
+.desc_box{
+	width:100%;
+	height:120px;
+	padding:20px 10px;
+	text-align:left;
+	background:#fff;
+}
+
+.texto_desc{
+	font-family:Open Sans;
+	font-size:1.4em;
+	color:#999;
+}
+
+.valor_box{
+	position:relative;
+	width:100%;
+	height:auto;
+	background:#bdd2a2;
+	padding:10px;
+	font-family:Oswald;
+	font-size:1.8em;
+	font-weight:normal;
+	color:#fff;
+}
+
+.bt_vermais{
+	position:relative;
+	width:400px;
+	height:auto;
+	border:1px solid #999;
+	color:#999;
+	padding:10px;
+	font-family:Raleway;
+	font-size:1.6em;
+	font-weight:500;
+	margin:0 auto;
+	margin-top:80px;
+}
+
+/*  CONTATOS  */
+#contato{
+	position:relative;
+	width:100%;
+	height:auto;
+	text-align:center;	
+	padding:80px 0px;
+	margin:0;
+	background: url(../imgs/subtle_dots.png);
+}
+
+.input4{
+	position:relative;
+	width:600px;
+	height:40px;
+	background:#fff;
+	border:2px #cedde6 solid;
+	border-radius:5px;
+	text-indent:5px;
+	display:block;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+@media (max-width: 1024px){
+	.input4{
+		width:90%;
+	}
+}
+
+.box-msg{
+	height:300px;
+}
+
+
+

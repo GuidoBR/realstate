@@ -1,0 +1,549 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- META TAGS -->
+    
+<!-- META TAGS -->
+<meta charset="utf-8">    
+<meta name="description" content="Fundada ha mais de 20 anos com atuação nos ramos de locação, administração e venda de imóveis, com assessoria jurídica especializada. Somos uma equipe treinada com permanente aperfeiçoamento que resulta em serviços de qualidade, priorizando profissionalismo, honestidade e transparência na relação profissional com locadores, locatários, vendedores e compradores.">
+<meta name="robots" content="index,follow" />
+<meta content="ACB Informática - Soluções na Web - www.acbinformatica.com" name="author" />
+<meta name="URL" content="http://www.philigretimobiliaria.com.br" />
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<meta name="revisit-after" content="1 day" />
+<meta property="og:image" content="http://www.philigretimobiliaria.com.br/imgs/logo.png" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Philigret Assessoria Imobiliária | Seu patrimônio confiado a quem entende" />
+<meta property="og:description" content="Fundada ha mais de 20 anos com atuação nos ramos de locação, administração e venda de imóveis, com assessoria jurídica especializada. Somos uma equipe treinada com permanente aperfeiçoamento que resulta em serviços de qualidade, priorizando profissionalismo, honestidade e transparência na relação profissional com locadores, locatários, vendedores e compradores." />
+<meta property="og:url" content="http://www.philigretimobiliaria.com.br" />
+
+<!--Favicon -->
+<link rel="icon" href="imgs/logo.ico" type="image/x-icon"/>
+   
+    
+	<!-- TÍTULO DA PÁGINA -->
+	<title>Venda de Imóveis | Philigret Assessoria Imobiliária | Seu patrimônio confiado a quem entende</title> 
+    
+    <!-- ESTILOS EXTERNOS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static "css/geral.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/flexslider.css" %}" media="screen"><!-- Plugin CSS banner -->
+    <link rel="stylesheet" type="text/css" href="{% static "css/slick.css" %}" media="screen">
+
+
+    <!-- SCRITS EXTERNOS -->
+    <script type="text/javascript" src="{% static "js/jquery-1.8.2.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/funcao.js" %}js/funcao.js"></script>
+    <script type="text/javascript" src="{% static "js/jquery.flexslider.js" %}"></script><!-- Plugin JS banner -->
+    <script type="text/javascript" src="{% static "js/slick.min.js" %}"></script>
+    
+    
+    <!--SCRIPTS INTERNOS -->
+    
+    <!-- FlexSlider -->
+	<script type="text/javascript">
+      $(function(){
+        SyntaxHighlighter.all();
+      });
+
+      $(window).load(function(){
+        
+        $('.flexslider').flexslider({
+          animation: "fade",
+		      slideshowSpeed: 5000,
+		      controlNav: true, 
+          start: function(slider){
+              $('body').removeClass('loading');
+            }
+        });
+
+      });
+    </script>
+
+</head>
+
+<body onLoad="pop_menu();loop();config_inicial();">
+
+
+<!-- HEADER ==============================================================-->
+<header>
+<div class="bar_selecao">
+    <div class="palco align-bar">
+    	
+        <!--Logotipo -->
+        <div id="logo_mini" class="logotipo2"><img src="http://www.philigretimobiliaria.com.br/imgs/logotipo_mini.png" alt="Logotipo | Philigret Asseroria Imobiliária" title="Logotipo | Philigret Asseroria Imobiliária"></div>
+
+        <!-- Tipo de imóvel -->
+        <div class="guias">
+            <!-- Guia de telas -->
+            <a href="http://www.philigretimobiliaria.com.br/"><img src="http://www.philigretimobiliaria.com.br/imgs/home4.png"></a>
+            <a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/" class="link_tela" style="color:#85afc9;" title="Venda de Imóveis | Philigret Assessoria Imobiliária">&nbsp;&nbsp;&nbsp;VENDA DE IMÓVEIS&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>
+            <a href="http://www.philigretimobiliaria.com.br/aluguel-residencial/" class="link_tela"  title="Aluguel Residencial | Philigret Assessoria Imobiliária">ALUGUEL RESIDENCIAL&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>
+            <a href="http://www.philigretimobiliaria.com.br/aluguel-comercial/" class="link_tela"  title="Aluguel Comercial | Philigret Assessoria Imobiliária">ALUGUEL COMERCIAL&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>
+            <a href="http://www.philigretimobiliaria.com.br/aluguel-por-temporada/" class="link_tela"  title="Aluguel por Temporada | Philigret Assessoria Imobiliária">ALUGUEL POR TEMPORADA</a>
+        </div>
+
+        <!--Guias mobile-->
+        <div class="guias-mobile"><a href="http://www.philigretimobiliaria.com.br/" class="link_tela"><img src="http://www.philigretimobiliaria.com.br/imgs/home4.png"> Voltar ao Início</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="link_tela">Estamos em: Venda de Imóveis</span></div>
+    </div>
+
+    
+</div>
+
+
+<div class="palco">
+    <!--Logotipo -->
+    <div class="logotipo2"><img class="img_logo" src="http://www.philigretimobiliaria.com.br/imgs/logotipo_header.png" alt="Logotipo | Philigret Asseroria Imobiliária" title="Logotipo | Philigret Asseroria Imobiliária"></div>
+
+    <!-- Bt menu-->
+    <div id="bt_menu"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_menu.jpg" width="20%"  style="max-width:70px"/></div>
+
+    <!-- Guias de navegação -->
+    <nav class="guias texto_guias">
+        <ul class="menu">
+            <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/" target="_self" >Inicio</a></li>&nbsp;&nbsp;&nbsp;<img src="http://www.philigretimobiliaria.com.br/imgs/div_link.jpg">&nbsp;&nbsp;&nbsp;
+            <li><a href="http://www.philigretimobiliaria.com.br/quem-somos/" target="_self">A Imobiliária</a></li>&nbsp;&nbsp;&nbsp;<img src="http://www.philigretimobiliaria.com.br/imgs/div_link.jpg">&nbsp;&nbsp;&nbsp;
+            <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/#nossos_servicos">Serviços</a></li>&nbsp;&nbsp;&nbsp;<img src="http://www.philigretimobiliaria.com.br/imgs/div_link.jpg">&nbsp;&nbsp;&nbsp;
+            <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/#imoveis_destaque">Imóveis em Destaque&nbsp;</a></li>&nbsp;&nbsp;&nbsp;<img src="http://www.philigretimobiliaria.com.br/imgs/div_link.jpg">&nbsp;&nbsp;&nbsp;
+            <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/#contato" >Contatos</a></li>    
+        </ul>
+    </nav>
+
+    <nav class="guias3 texto_guias">
+        <ul class="menu2">
+            <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/" target="_self" >Inicio</a></li>
+            <li><a href="http://www.philigretimobiliaria.com.br/quem-somos/" target="_self">A Imobiliária</a></li>
+            <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/#nossos_servicos">Serviços</a></li>
+            <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/#imoveis_destaque">Imóveis em Destaque&nbsp;</a></li>
+            <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/#contato" >Contatos</a></li>    
+        </ul>
+    </nav>
+</div>
+
+
+</header>
+
+
+<!-- BANNERS ==============================================================-->
+<section id="banner">
+	 <div class="flexslider">
+          <ul class="slides">
+          	<li><div class="img_banner" style="background:url(http://www.philigretimobiliaria.com.br/imgs/banner/1.jpg) center;background-size:cover"></div></li> 
+            <li><div class="img_banner" style="background:url(http://www.philigretimobiliaria.com.br/imgs/banner/2.jpg) center;background-size:cover"></div></li>
+          </ul>
+     </div>
+</section>
+
+
+<!-- FILTRO =============================================================-->
+<section id="filtro">
+
+    <div class="palco">
+        <form action="" method="post" name="form_busca" target="_self">
+            <div class="box1">
+                <label class="texto_form1">TIPO DE IMÓVEL:</label><br>
+                <select name="tipo_imovel" class="input1 texto" style="font-family: Open Sans" onchange="javascript:atualizaValor('VENDA',this.value)">
+                    <!-- lista imóveis - Tipo -->
+                    <option value=''>-</option><option value='TODOS'>TODOS</option><option value='APARTAMENTO'>APARTAMENTO</option><option value='CASA'>CASA</option><option value='LOJA'>LOJA</option>                </select>
+             </div>
+             
+             <div class="box1">
+                <label class="texto_form1">VALOR:</label><br>
+                <select id="option_valor" name="valor" class="input1 texto" style="font-family: Open Sans" onmouseover="javascript:atualizaQuartos('VENDA',this.value)"  onchange="javascript:atualizaQuartos('VENDA',this.value)">
+                    <!-- lista imóveis - Valores |
+                                        -->
+                </select>
+             </div>
+             
+             <div class="box1">
+                <label class="texto_form1">N° QUARTOS:</label><br>
+                <select id="option_quartos" name="num_quartos" class="input2 texto" style="font-family: Open Sans" onmouseover="javascript:atualizaLocal('VENDA',this.value)"  onchange="javascript:atualizaLocal('VENDA',this.value)">
+                    <!-- lista imóveis - Quartos 
+                                        -->
+                </select>
+             </div>
+             
+             <div class="box1">
+                <label class="texto_form1">LOCALIZAÇÃO:</label><br>
+                <select id="option_local" name="local" class="input1 texto" style="font-family: Open Sans">
+                    <!-- lista imóveis - Localização
+                                         -->
+                </select>
+             </div>
+             
+             <!-- Bt Buscar imóveis -->
+             <div class="box1" onMouseOver="$(this).animate({opacity:0.5});"  onMouseOut="$(this).animate({opacity:1.0});"><a href="javascript:GetBuscaImovel('VENDA')" title="Clique para buscar imóveis"><img src="http://www.philigretimobiliaria.com.br/imgs/bt_buscar.png"></a></div>
+        </form>
+    </div>
+
+    <!-- Seta filtro-->
+	<div class="seta_filtro"><img src="http://www.philigretimobiliaria.com.br/imgs/seta_filtro.png"></div>
+
+</section>
+
+
+<!-- IMÓVEIS SELECIONADOS =============================================================-->
+<section id="imoveis_selecionados">
+	<h1>IMÓVEIS <span style="font-weight:600">SELECIONADOS</span></h1>
+	
+  <div id="result_busca"></div>
+  <div id="carregando" style="display:none"><img src="http://www.philigretimobiliaria.com.br/imgs/carregando.gif"/></div>
+
+	 <!-- Seta filtro-->
+	<div class="seta_filtro"><img src="http://www.philigretimobiliaria.com.br/imgs/seta_selecionados.png"></div>
+</section>
+
+
+<!-- IMÓVEIS EM DESTAQUE =============================================================-->
+<section id="imoveis_destaque">
+	<h1>IMÓVEIS <span style="font-weight:600">EM DESTAQUE</span></h1>
+	
+    <div class="slider1"  style="top:50px">
+    
+    <!-- lista imóveis - Localização -->
+    
+			<div class="content-box_imovel">
+		      <a href="imovel/78" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Rio De Janeiro</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/2013-10-24_12.35.47.jpg);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Apartamento - Venda</span><br><br>
+		    				<span class="texto_desc"> Leme - 02 quartos, 02 banheiros, portaria 24 horas. </span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 750.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/83" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">São João De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/b8a3f9290f249d74a63c4bf95399e84f);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Casa - Venda</span><br><br>
+		    				<span class="texto_desc"> Sao Joao de Meriti - 03 quartos, sala, cozinha, banheiro, garagem, área de serviço.</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 250.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/84" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">São João De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/b8a3f9290f249d74a63c4bf95399e84f);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Casa - Venda</span><br><br>
+		    				<span class="texto_desc"> Vila Tiradentes - Casa, 02 quartos, sala, cozinha, banheiro, área e 1 vaga na garagem</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 180.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/121" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Sao Joao De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/IMG_20160924_082336966_HDR.jpg);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Casa - Venda</span><br><br>
+		    				<span class="texto_desc"> Sao Joao de Meriti - Casa, 02 quartos, suíte, garagem com 3 vagas</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 395.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/124" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Sao Joao De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/0c545e7145a5d11620657f6b6dbe6df9);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Apartamento - Venda</span><br><br>
+		    				<span class="texto_desc"> Sao Joao de Meriti - Apartamento, 02 quartos, suíte, dependencia de empregada, garagem</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 680.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/148" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Sao Joao De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/ac3dcfc810b142d5df1f8e823aca94aa);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Apartamento - Venda</span><br><br>
+		    				<span class="texto_desc"> Vilar dos Teles - Apartamento, 02 quartos, área de serviço e garagem</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 170.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/149" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Sao Joao De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/b8a3f9290f249d74a63c4bf95399e84f);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Loja - Venda</span><br><br>
+		    				<span class="texto_desc"> Éden - Loja, banheiro, salão e cozinha</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 80.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/150" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Sao Joao De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/b8a3f9290f249d74a63c4bf95399e84f);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Loja - Venda</span><br><br>
+		    				<span class="texto_desc"> Éden - Loja, salão, cozinha, banheiro e quarto</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 150.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/158" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Sao Joao De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/b8a3f9290f249d74a63c4bf95399e84f);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Loja - Venda</span><br><br>
+		    				<span class="texto_desc"> Éden - Loja, 04 salas, cozinha e banheiro</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 170.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/163" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Sao Joao De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/088077b0b1ec999c5fc8c2b868dc7e45);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Casa - Venda</span><br><br>
+		    				<span class="texto_desc"> Eden, Sao Joao de Meriti - Casa com 2 quartos com suite e garagem</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 315.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/176" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Sao Joao De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/f918a1c21e6a70a8c0b1e739cf0fa278);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Casa - Venda</span><br><br>
+		    				<span class="texto_desc"> 2 CASAS-  2 QUARTOS, GARAGEM PARA 3 CARROS, TERRAÇO COM CHURRASQUEIRA</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 600.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/177" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Nova Iguacu</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/foto_padrao.jpg);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Apartamento - Venda</span><br><br>
+		    				<span class="texto_desc"> APARTAMENTO 4 QUARTOS, DEPENDÊNCIA DE EMPREGADA, 2 VAGAS</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 900.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+			<div class="content-box_imovel">
+		      <a href="imovel/180" target="_self" title="Clique para ver mais detalhes.">
+		    		<div class="box_imovel">
+		    			<div class="local_box texto"><img src="http://www.philigretimobiliaria.com.br/imgs/icon_local.png">Sao Joao De Meriti</div>
+		    			<div class="img_box" style="background-image:url(http://www.philigretimobiliaria.com.br/imgs/imoveis/foto_padrao.jpg);"></div>
+		    			<div class="desc_box">
+		    				<img src="http://www.philigretimobiliaria.com.br/imgs/icon_casa.png"> <span class="texto">Casa - Venda</span><br><br>
+		    				<span class="texto_desc"> Centro - São João de Meriti - Casa 01 Quarto com terraço</span>
+		    			</div>
+		    			<div class="valor_box" style="background:#4c7d9d">R$ 55.000,00</div>
+		    		</div>
+		      </a>
+		    </div>
+    </div>
+        
+    
+
+	 <!-- Seta filtro-->
+	<div class="seta_filtro"><img src="http://www.philigretimobiliaria.com.br/imgs/seta_destaque.png"></div>
+</section>
+
+
+<!-- NOSSOS SERVIÇOS =============================================================-->
+<section id="nossos_servicos">
+	<h1 style="color:#eee">NOSSOS <span style="font-weight:600">SERVIÇOS</span></h1>
+	
+   
+					 <a href="#contato" target="_self">
+						 <div class="box_servicos">
+					    	<img class="img_servicos" src="http://www.philigretimobiliaria.com.br/imgs/servicos/size_960_16_9_chave-na-porta-com-chaveiro-em-formato-de-casa.jpg" alt="LOCAÇÃO E VENDA DE IMÓVEIS | Philigret Asseroria Imobiliária" title="LOCAÇÃO E VENDA DE IMÓVEIS | Philigret Asseroria Imobiliária">
+					    	<div class="titulo_serv">LOCAÇÃO E VENDA DE IMÓVEIS</div>
+					    	<div class="desc_serv">
+					            <p>Para a loca&ccedil;&atilde;o e venda de seu im&oacute;vel, prestamos servi&ccedil;os de qualidade, atrav&eacute;s de:</p>
+
+<p>Divulga&ccedil;&atilde;o com an&uacute;ncios em nosso site, m&iacute;dias gr&aacute;tis e as contratadas, placas de divulgac&atilde;o.</p>
+
+<p>Levantamento cadastral dos pretendentes ao im&oacute;vel.</p>
+
+<p>Elabora&ccedil;&atilde;o de contratos por nosso departamento jur&iacute;dico. --</p>
+
+					        </div>
+					        
+					     </div>
+					 </a>
+				
+					 <a href="#contato" target="_self">
+						 <div class="box_servicos">
+					    	<img class="img_servicos" src="http://www.philigretimobiliaria.com.br/imgs/servicos/1.jpg" alt="ADMINISTRAÇÃO DE IMÓVEIS | Philigret Asseroria Imobiliária" title="ADMINISTRAÇÃO DE IMÓVEIS | Philigret Asseroria Imobiliária">
+					    	<div class="titulo_serv">ADMINISTRAÇÃO DE IMÓVEIS</div>
+					    	<div class="desc_serv">
+					            <p>Realizamos servi&ccedil;os de excel&ecirc;ncia na administra&ccedil;&atilde;o de seu im&oacute;vel.</p>
+
+<p>Divulga&ccedil;&atilde;o de seu im&oacute;vel nos meios de comunica&ccedil;&atilde;o.</p>
+
+<p>Intermedia&ccedil;&atilde;o entre locador e locat&aacute;rio.</p>
+
+<p>Cobran&ccedil;a dos alugu&eacute;is e encargos da loca&ccedil;&atilde;o.</p>
+
+<p>Demonstrativo mensal dos valores recebidos e pagos.&nbsp;</p>
+
+					        </div>
+					        
+					     </div>
+					 </a>
+				
+					 <a href="#contato" target="_self">
+						 <div class="box_servicos">
+					    	<img class="img_servicos" src="http://www.philigretimobiliaria.com.br/imgs/servicos/assessoria.jpg" alt="ASSESSORIA JURÍDICA | Philigret Asseroria Imobiliária" title="ASSESSORIA JURÍDICA | Philigret Asseroria Imobiliária">
+					    	<div class="titulo_serv">ASSESSORIA JURÍDICA</div>
+					    	<div class="desc_serv">
+					            <p>Presta&ccedil;&atilde;o permanente de servi&ccedil;os de advocacia por nosso departamento jur&iacute;dico, com seriedade e honestidade.</p>
+
+<p>Com especialidade em Direito Imobili&aacute;rio.</p>
+
+<p>Legaliza&ccedil;&atilde;o de Im&oacute;veis.</p>
+
+<p>Direito sucess&oacute;rio. --</p>
+
+					        </div>
+					        
+					     </div>
+					 </a>
+				
+					 <a href="#contato" target="_self">
+						 <div class="box_servicos">
+					    	<img class="img_servicos" src="http://www.philigretimobiliaria.com.br/imgs/servicos/4016-s8.jpg" alt="LEGALIZAÇÃO DE IMÓVEIS | Philigret Asseroria Imobiliária" title="LEGALIZAÇÃO DE IMÓVEIS | Philigret Asseroria Imobiliária">
+					    	<div class="titulo_serv">LEGALIZAÇÃO DE IMÓVEIS</div>
+					    	<div class="desc_serv">
+					            <p>Realiza&ccedil;&atilde;o de um servi&ccedil;o completo, com a orienta&ccedil;&atilde;o e conclus&atilde;o da legaliza&ccedil;&atilde;o de seu im&oacute;vel ,em todas as etapas exigidas pelo poder p&uacute;blico para a sua seguran&ccedil;a e tranquilidade. --</p>
+
+					        </div>
+					        
+					     </div>
+					 </a>
+				<br><br><span class='texto' style='color:#fff'>Em caso de dúvidas:</span><br><br><div class='bt_serv'>FALE CONOSCO</div>    
+
+    <!-- Seta filtro-->
+    <div class="seta_filtro"><img src="http://www.philigretimobiliaria.com.br/imgs/seta_contato.png"></div>
+
+</section>
+
+
+<!-- CONTATOS ================================================== -->
+<section id="contato">
+    <h1>FALE <span style="font-weight:600">CONOSCO</span></h1>
+    
+    <div class="palco">
+        <!-- FORMULÁRIO -->
+        <form action="#" method="post" name="form_contato">
+                <input class="input4" name="nome" type="text" placeholder="ENTRE COM SEU NOME" value="" >
+                <input class="input4" name="email" type="email" placeholder="INSIRA SEU EMAIL" value="" >
+                <input class="input4" name="tel" type="tel" placeholder="ENTRE COM SEU TELEFONE" value="" >
+                <textarea class="input4 box-msg" name="mensagem" placeholder="INSIRA SUA MENSAGEM"></textarea>
+                
+                <br><br>
+                <div style="position:relative;width:300px;margin:0 auto;text-align:center">
+                    <input type="hidden" name="acao" value="contato">
+                    <input type="submit" class="bt2 texto" style="color:#fff;background:#396581" value="ENVIAR"> 
+                </div>            
+        </form>
+    </div>
+
+     <!-- Âncora -->
+    <div id="anc_contatos" style="position:absolute;top:-80px"></div>
+</section>
+
+
+<!-- RODAPÉ =============================================================-->
+<footer>
+<div style="padding:10px 0px;background:#5a8dae">
+        <div class="palco">
+            <div class="r_social"><a href="https://www.facebook.com/PhiligretImobiliaria/" target="_blank"><img src="http://www.philigretimobiliaria.com.br/imgs/r_face.png"></a></div>
+            <nav class="guias2 texto_guias2">
+                <ul class="menu_rodape">
+                    <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/" target="_self">Inicio</a></li>
+                    <li><a href="http://www.philigretimobiliaria.com.br/quem-somos/" target="_self">A Imobiliária</a></li>
+                    <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/#nossos_servicos"  target="_self">Serviços</a></li>
+                    <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/#imoveis_destaque" target="_self">Imóveis em Destaque&nbsp;</a></li>
+                    <li><a href="http://www.philigretimobiliaria.com.br/venda-de-imoveis/#contato" target="_self">Contatos</a></li>    
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div style="padding:20px 0px;background:#4a7d9e">
+        <div class="palco">
+            <div class="box_contatos">
+                <img src="http://www.philigretimobiliaria.com.br/imgs/icon_cont1.png">
+                <br><br>
+                <span class="texto_cont">Rua Gessyr Gonçalves Fontes, 180/102 - Centro - São João de Meriti - RJ</span>
+            </div>
+            <div class="box_contatos">
+                <img src="http://www.philigretimobiliaria.com.br/imgs/icon_cont2.png">
+                <br><br>
+                <span class="texto_cont">contato@philigretimobiliaria.com.br</span>
+            </div>
+            <div class="box_contatos">
+                <img src="http://www.philigretimobiliaria.com.br/imgs/icon_cont3.png">
+                <br><br>
+                <span class="texto_cont">(21) 2655-1966 |  (21) 3753-6317<br>(21) 99707-2260 - WhatsApp</span>
+            </div>            
+        </div>
+    </div>
+
+    <div style="padding:20px 0px;background:#396581">
+        <div class="palco">
+            <div class="direitos texto_cont" style="color:#fff">Copyright © 2016 - Philigret Assessoria Imobiliária - Todos os direitos reservados - CNPJ: 11.491.754/0001-08 | CRECI-RJ: J 6626/0</div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    //Executa Slich
+    $('.slider1').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      variableWidth: true,
+      infinite: true,
+      autoplaySpeed: 2000
+    });
+</script>
+
+</body>
+</html>

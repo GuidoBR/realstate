@@ -1,0 +1,21 @@
+#banner{
+	position:relative;
+	width:100%;
+	height:450px;
+}
+@media (max-width:1024px){
+	#banner{
+		height:280px;
+	}
+}
+
+.img_banner{
+	 position:relative;
+	 width:100%;
+	 height:450px;
+}
+@media (max-width:1024px){
+	.img_banner{
+		height:280px;
+	}
+}

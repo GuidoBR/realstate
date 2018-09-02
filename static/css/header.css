@@ -1,0 +1,179 @@
+.bar_selecao{
+	position:fixed;
+	width:100%;
+	height:40px;
+	padding:10px;
+	background:#3a7faa;
+	top:0;
+	z-index:1000;
+	border-bottom: solid 1px #85afc9;
+}
+
+.align-bar{
+	text-align:right;
+}
+@media (max-width: 1024px){
+	.align-bar{
+		text-align:center;
+	}
+}
+
+#logo_mini{
+	padding:0;
+	display:none;
+	text-align:left;
+}
+
+
+.link_tela{
+	font-family:Oswald;
+	font-size:1.2em;
+	color:#cedde6;
+	vertical-align:middle;
+}
+
+.link_tela:hover{
+	color:#85afc9;
+}
+
+.seta_topo{
+	position:absolute;
+	width:100%;
+	height:50px;
+	text-align:center;
+	bottom:-50px;
+}
+
+.logotipo2{
+	position:relative;
+	width:290px;
+	height:auto;
+	padding: 30px 0px;
+	display:inline-block;
+	vertical-align:middle;
+}
+@media (max-width:1024px)
+{
+	.logotipo2{
+		width:50%;
+		padding:15px 0px;
+		text-align:left;
+	}
+}
+
+.guias{
+	position:relative;
+	width:670px;
+	height:auto;
+	text-align:right;
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:-3px;
+}
+@media (max-width: 1024px){
+	.guias{
+		display:none;
+	}
+}
+
+.guias3{
+	display:none;
+	background:#3a7faa;
+	position:absolute;
+	width:100%;
+	z-index:900;
+	border-radius:5px;
+}
+
+.guias-mobile{
+	display:none;
+}
+@media (max-width: 1024px){
+	.guias-mobile{
+		width:auto;
+		height:auto;
+		text-align:center;
+		display:block;
+	}
+}
+
+
+.texto_guias{
+	font-family:Raleway;
+	font-size:1.6em;
+	font-weight: 500;
+	color:#103144;	
+}
+
+.menu{
+    padding:0;
+    margin:0;
+}
+.menu li{
+	position:relative;
+    width:auto;
+    height:auto;
+	display:inline-block;
+    text-align:center;
+}
+.menu li a:link{
+	color:#103144;  
+}
+.menu li a:hover{
+	color: #ddd;   
+}
+@media (max-width:1024px)
+{
+	.menu2{
+    	padding:0;
+   		margin:0;
+	}
+	.menu2 li{
+		position:relative;
+	    width:90%;
+	    height:auto;
+		display:block;
+	    text-align:center;
+	    border-top:1px #376480 dashed;
+	    margin:0 auto;
+	    margin-bottom:5px;
+	    padding:15px 0px;
+	    margin-left:5%;
+	}
+	.menu2 li a:link{
+		color:#fff;  
+	}
+	.menu2 li a:visited{
+		color:#fff;  
+	}
+}
+
+
+#bt_menu{
+	display:none;
+}
+@media (max-width:1024px)
+{
+	 #bt_menu{
+	 	position:relative;
+		width:50%;
+		height:auto;
+		border:none;
+		margin-left:-3px;
+		display:inline-block;
+		vertical-align:middle;
+		text-align:right;
+	}
+}
+
+
+.img_logo{
+	width:100%;
+}
+@media (max-width:1024px)
+{
+	.img_logo{
+		width:auto;
+		height:40px;
+	}
+}
