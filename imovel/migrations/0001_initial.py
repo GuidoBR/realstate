@@ -70,7 +70,7 @@ class Migration(migrations.Migration):
             name='Locacao',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('tipo_locacao', models.IntegerField(choices=[(1, 'ALUGUEL-POR-TEMPORADA'), (2, 'ALUGUEL-COMERCIAL'), (3, 'ALUGUEL-RESIDENCIAL'), (4, 'VENDA')], default=3)),
+                ('tipo_locacao', models.IntegerField(choices=[(1, 'ALUGUEL-POR-TEMPORADA'), (2, 'ALUGUEL-COMERCIAL'), (3, 'ALUGUEL-RESIDENCIAL')], default=3)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('imovel', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='imovel.Imovel')),
@@ -115,7 +115,7 @@ class Migration(migrations.Migration):
                 ('nome', models.CharField(max_length=255)),
                 ('login', models.CharField(max_length=255)),
                 ('password', models.CharField(max_length=255)),
-                ('role', models.IntegerField(choices=[(1, 'Administrador'), (2, 'Operador'), (3, 'Locatario'), (4, 'Proprietario'), (5, 'Outros')], default=5, max_length=2)),
+                ('role', models.CharField(choices=[(1, 'Administrador'), (2, 'Operador'), (3, 'Locatario'), (4, 'Proprietario'), (5, 'Outros')], default=5, max_length=2)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
             ],
