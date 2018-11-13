@@ -20,7 +20,7 @@ class Usuario(models.Model):
     nome = models.CharField(max_length=255)
     login = models.CharField(max_length=255)
     password = models.CharField(max_length=255)
-    role = models.CharField(max_length=2, choices=USERS_ROLES, default=OUTROS)
+    role = models.IntegerField(choices=USERS_ROLES, default=OUTROS)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -151,11 +151,13 @@ class Locacao(models.Model):
     TEMPORADA = 1
     COMERCIAL = 2
     RESIDENCIAL = 3
+    VENDAS = 4
 
     TIPO_LOCACAO = (
             (TEMPORADA, 'ALUGUEL-POR-TEMPORADA'),
             (COMERCIAL, 'ALUGUEL-COMERCIAL'),
-            (RESIDENCIAL, 'ALUGUEL-RESIDENCIAL')
+            (RESIDENCIAL, 'ALUGUEL-RESIDENCIAL'),
+            (VENDAS, 'VENDA')
             )
     tipo_locacao = models.IntegerField(choices=TIPO_LOCACAO, default=RESIDENCIAL)
     preco = models.DecimalField(max_digits=8, decimal_places=2)
