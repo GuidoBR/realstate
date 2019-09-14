@@ -25,7 +25,7 @@ SECRET_KEY = '$r*@mtfawf78fl%a*i^uiok$m$p-bq72i1j!-tosmpuut7)!w0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://imobiliaria-crud.herokuapp.com/"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
