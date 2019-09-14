@@ -90,8 +90,9 @@ class Imovel(models.Model):
     area = models.IntegerField(default=0)
     garagem = models.IntegerField(default=0)
     tipo = models.IntegerField(choices=TIPO_IMOVEL, default=CASA)
-    iptu = models.DecimalField(max_digits=8, decimal_places=2)
-    condominio = models.DecimalField(max_digits=8, decimal_places=2)
+    iptu = models.DecimalField(default=0, max_digits=8, decimal_places=2)
+    aluguel = models.DecimalField(default=0, max_digits=8, decimal_places=2)
+    condominio = models.DecimalField(default=0, max_digits=8, decimal_places=2)
     destaque = models.BooleanField(default=False)
 
     endereco = models.ForeignKey(Endereco, on_delete=models.CASCADE)
@@ -104,12 +105,16 @@ class Imovel(models.Model):
         return "[{}] - ".format(self.TIPO_IMOVEL[self.tipo][1], self.endereco)
 
     @property
-    def iptu(self):
+    def preco_iptu(self):
         return "R$ {}".format(self.iptu)
 
     @property
-    def condominio(self):
+    def preco_condominio(self):
         return "R$ {}".format(self.condominio)
+
+    @property
+    def preco_total(self):
+        return "R$ {}".format(self.condominio + self.iptu + self.aluguel)
 
     class Meta:
         db_table = 'Imoveis'
