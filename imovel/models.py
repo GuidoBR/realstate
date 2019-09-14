@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from collections import namedtuple
 
 
 class Usuario(models.Model):
@@ -72,24 +73,25 @@ class Servico(models.Model):
         get_latest_by = "created_at"
 
 class Imovel(models.Model):
-    APARTAMENTO = 1
+    APTO = 1
     CASA = 2
     SALA = 3
     LOJA = 4
 
-    TIPO_IMOVEL = (
-            (0, ''),
-            (APARTAMENTO, 'APARTAMENTO'),
-            (CASA, 'CASA'),
-            (SALA, 'SALA'),
-            (LOJA, 'LOJA')
+    TIPO_IMOVEL = namedtuple('TIPO_IMOVEL', "tipo nome")
+    CATEGORIAS = (
+            TIPO_IMOVEL(0, ''),
+            TIPO_IMOVEL(APTO, 'APARTAMENTO'),
+            TIPO_IMOVEL(CASA, 'CASA'),
+            TIPO_IMOVEL(SALA, 'SALA'),
+            TIPO_IMOVEL(LOJA, 'LOJA')
             )
     descricao = models.TextField()
     breve_descricao = models.CharField(max_length=255)
     quantidade_quartos = models.IntegerField(default=0)
     area = models.IntegerField(default=0)
     garagem = models.IntegerField(default=0)
-    tipo = models.IntegerField(choices=TIPO_IMOVEL, default=CASA)
+    tipo = models.IntegerField(choices=CATEGORIAS, default=CASA)
     iptu = models.DecimalField(default=0, max_digits=8, decimal_places=2)
     aluguel = models.DecimalField(default=0, max_digits=8, decimal_places=2)
     condominio = models.DecimalField(default=0, max_digits=8, decimal_places=2)
@@ -102,7 +104,11 @@ class Imovel(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return "[{}] - ".format(self.TIPO_IMOVEL[self.tipo][1], self.endereco)
+        return "[{}], {} - {}".format(
+                self.CATEGORIAS[self.tipo].nome,
+                self.endereco.cidade,
+                self.endereco.estado
+            )
 
     @property
     def preco_iptu(self):
