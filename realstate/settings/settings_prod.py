@@ -15,6 +15,10 @@ DATABASES = {
     }
 }
 
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
 
 # Configure Django App for Heroku.
 import django_heroku

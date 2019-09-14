@@ -24,5 +24,5 @@ urlpatterns = [
     path('aluguel-comercial/', include('imovel.urls')),
     path('aluguel-por-temporada/', include('imovel.urls')),
     path('imovel/', include('imovel.urls')),
-    path('admin/', admin.site.urls),
+    path('administracao-imobiliaria/', admin.site.urls),
 ]
